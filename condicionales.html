@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lionel Messi</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <script>
+      
+        var email = "fracisco@gmail.com";
+        var email_dos ="welrae.com"
+
+        //if else
+        function validador(){
+            var f = email.search("@");
+            var g = email_dos.search(".com");
+        
+            if ((f != -1) && (g != -1)) {
+        
+                return "es un email valido";
+            }else if (f != -1) {
+                return "falta el .com";
+            }else if (g != -1) {
+                return "falta el @";
+            }else {
+                return "no es un email valido";
+            }
+        }
+
+        
+        //switch
+
+        var dia = "";
+
+        switch (new Date().getDate()) {
+            case 0:
+                dia = "domingo";
+                break;
+            case 1:
+                dia = "lunes";
+                break;
+            case 2:
+                dia = "martes";
+                break;
+            case 3:
+                dia = "miercoles";
+                break;
+            case 4:
+                dia = "jueves";
+                break;
+            case 5:
+                dia = "viernes";
+                break;
+           
+            default:
+                dia = "sabado";
+                break;
+        }
+
+
+     document.getElementById("demo").innerHTML = dia;
+    </script>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

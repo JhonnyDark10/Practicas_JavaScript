@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <script>
+      
+      //este tipo de variables no pueden ser modificadas
+
+      const numero = 5.40;
+
+      //numero  = 5.0;//error, las const no se inmutables
+
+      var  x = 10;
+      {
+          const x=2;
+      }
+      //la x sigue valiendo 10
+    
+      const auto = {
+          tipo:"vwr",
+          modelo:"500",
+          color:"azul",
+      }
+
+      auto.tipo = "toyota";
+
+
+      const arreglo = ["1","2","3"];
+      arreglo[0] = "0";
+
+      
+
+     document.getElementById("demo").innerHTML = arreglo;
+    </script>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

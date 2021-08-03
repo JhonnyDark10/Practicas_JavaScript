@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <script>
+
+        var persona = {
+            primer_nombre : 'francisco',
+            apelldo: 'ocampo',
+            id: 1234,
+
+
+            nombre_completo: function(){
+                return this.primer_nombre + ' ' + this.apelldo;
+            }
+
+        };
+
+     document.getElementById("demo").innerHTML = persona.nombre_completo();
+    </script>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

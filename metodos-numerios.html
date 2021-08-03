@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <script>
+
+        //tostring para concatenar
+        var a = 664.21512;
+        var b = a.toString() + " concatenado";
+
+        //mostrar una notacion exponencial de un numero
+
+        var c = a.toExponential(2);
+
+        //devuelve la cantidad de decimales que uno quiera
+        var d = a.toFixed(2);
+
+        var e = a.toPrecision(5);
+
+        //convierte un strin en numero
+        var y = "10";
+        var f =  Number(y) + 10;
+
+        var x = "10.66";
+        var g = parseInt(x);
+
+        var h = parseFloat(x);
+
+     document.getElementById("demo").innerHTML = h;
+    </script>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

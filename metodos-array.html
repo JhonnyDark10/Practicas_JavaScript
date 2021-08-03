@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <script>
+        //var arreglo = ["fuego","tierra","agua",mi_function,"aire"];
+        
+        var arreglo = ["fuego","tierra","agua","aire"];
+       /* 
+       function mi_function(){
+           return "planeta";
+       }
+        //para q se ordene alfabeticmente
+        var ordenar = arreglo.sort();
+*/
+       var arreglo_dos = new Array("fuego","tierra");
+/* PARA LISTAR
+       var text1 = "<ul>";
+
+        arreglo_dos.forEach(mi_function);
+        text1 += "</ul>"
+
+        function mi_function(valor){
+            text1 += "<li>" + valor + "</li>";
+        }*/
+
+        //ELIMINAR ultimo ELLEMENTO DEL ARREGLO
+
+        //var arreglo_pop = arreglo.pop();
+        //aumenta un elemento
+        //arreglo.push("arbol");
+        //elimina el primer elemento del arreglo
+        //arreglo.shift();
+        //aumenta al inicio
+        //arreglo.unshift("nuevo");
+
+        //inserta en una posicion el 0 q no elimine nada y la palabra
+        //arreglo.splice(2,0,"manzana");
+
+        //eliinar numero especifico de elemtos
+        //arreglo.splice(0,2);
+
+        //var con = arreglo_dos.concat(arreglo);
+
+        //crea un numero arreglo sin un elemento
+        //var arreglo_slice = arreglo.splice(1);
+        //se vean del indice 2 y del 5 ya no
+        var arreglo_slice = arreglo.splice(2,5);
+
+        
+
+
+
+
+     document.getElementById("demo").innerHTML = arreglo_slice;
+    </script>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

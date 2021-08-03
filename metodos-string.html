@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <script>
+
+        var a = "este string es nuestra base string de trabajo";
+
+        //indexOf -  busca una palabra en una cedana de texto desde 0 
+        var b = a.indexOf("string",10);
+
+        //indexOf -  busca una palabra de derecha a izquierda
+        var c = a.lastIndexOf("string");
+
+        //search
+        var d = a.search("string");
+
+        //slice  cortar un pedazo del string y lo extrae y lo guarda en una variable
+        var e = a.slice(0,10);
+        
+        //substring mostrar el fracmento de texto que nosotros le indiquemos
+        var f = a.substring(15);
+
+        //substrpalabra y tamaño
+        var g = a.substr(5,5);
+
+        //replace cambiar una palabra por otra
+        //var h = a.replace("string","libro");
+        var h = a.replace(/string/g,"libro");
+
+        //toUpperCase
+        var i= a.toUpperCase();
+
+        //toLowerCase
+        var j = a.toLowerCase();
+
+        //concat
+        var k = a.concat(" este es el string concatenado");
+
+        //trim
+        var l = "      esta es una prueba      con el metodo  trim";
+        var m = l.trim();
+
+        //charAt  busca carcater en especifico 
+        var n = a.charAt(0);
+
+        //split convertir string a array
+        var p = "a,b,c,d";
+        var x = p.split(",");
+
+     document.getElementById("demo").innerHTML = x[2];
+    </script>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
